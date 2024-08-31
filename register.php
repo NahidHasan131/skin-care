@@ -46,7 +46,6 @@ if(isset($_POST['submit'])){
 <body>
 
 
-
 <?php
 if(isset($message)){
    foreach($message as $message){
@@ -69,6 +68,7 @@ if(isset($message)){
       <input type="password" name="password" placeholder="Enter your password" required class="box">
       <input type="password" name="cpassword" placeholder="Confirm your password" required class="box">
       <select name="user_type" class="box">
+         <option >Select user</option>
          <option value="user">User</option>
          <option value="admin">Admin</option>
       </select>
