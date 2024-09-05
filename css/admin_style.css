@@ -3,7 +3,7 @@
 
 :root{
    --green-sea:#1abc9c;
-   --red:#c0392b;
+   --red:#e74c3c;
    --blue:#3498db;
    --black:#333;
    --white:#fff;
@@ -58,6 +58,7 @@ section{
    background-color: var(--white);
    color:var(--red);
    font-size: 2rem;
+   border-radius: 3rem;
 }
 
 /* top warning message */
@@ -333,18 +334,21 @@ section{
 
 .show-products .box-container .box img{
    height: 30rem;
+   width: 24rem;
+   border-radius: 6px 6px 0 0;
 }
 
 .show-products .box-container .box .name{
    padding:1rem 0;
-   font-size: 2rem;
+   font-size: 2.5rem;
    color:var(--black);
+   text-transform: capitalize;
 }
 
 .show-products .box-container .box .price{
    padding:1rem 0;
    font-size: 2.5rem;
-   color:var(--red);
+   color:var(--green-sea);
 }
 
 .edit-product-form{
