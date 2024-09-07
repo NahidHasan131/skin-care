@@ -21,7 +21,7 @@ if(!isset($admin_id)){
    <title>Admin panel</title>
 
    <!-- font awesome  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <!-- custom admin css  -->
    <link rel="stylesheet" href="css/admin_style.css">
@@ -50,7 +50,7 @@ if(!isset($admin_id)){
                };
             };
          ?>
-         <h3><i class="fa-solid fa-bangladeshi-taka-sign"></i><?php echo $total_pendings; ?>/-</h3>
+         <h3>TK.<?php echo $total_pendings; ?>/-</h3>
          <p><i class="fa-solid fa-money-check-dollar"></i> total pendings</p>
       </div>
 
@@ -65,7 +65,7 @@ if(!isset($admin_id)){
                };
             };
          ?>
-         <h3><i class="fa-solid fa-bangladeshi-taka-sign"></i><?php echo $total_completed; ?>/-</h3>
+         <h3>TK.<?php echo $total_completed; ?>/-</h3>
          <p><i class="fa-solid fa-file-invoice-dollar"></i> completed payments</p>
       </div>
 

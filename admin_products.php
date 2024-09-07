@@ -87,7 +87,7 @@ if(isset($_POST['update_product'])){
    <title>products</title>
 
    <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <!-- custom admin css file link  -->
    <link rel="stylesheet" href="css/admin_style.css">
@@ -129,7 +129,7 @@ if(isset($_POST['update_product'])){
       <div class="box">
          <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
          <div class="name"><?php echo $fetch_products['name']; ?></div>
-         <div class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i><?php echo $fetch_products['price']; ?>/-</div>
+         <div class="price">TK.<?php echo $fetch_products['price']; ?>/-</div>
          <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">update</a>
          <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
       </div>
