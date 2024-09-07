@@ -50,7 +50,7 @@ if(!isset($admin_id)){
                };
             };
          ?>
-         <h3>$<?php echo $total_pendings; ?>/-</h3>
+         <h3><i class="fa-solid fa-bangladeshi-taka-sign"></i><?php echo $total_pendings; ?>/-</h3>
          <p><i class="fa-solid fa-money-check-dollar"></i> total pendings</p>
       </div>
 
@@ -65,7 +65,7 @@ if(!isset($admin_id)){
                };
             };
          ?>
-         <h3>$<?php echo $total_completed; ?>/-</h3>
+         <h3><i class="fa-solid fa-bangladeshi-taka-sign"></i><?php echo $total_completed; ?>/-</h3>
          <p><i class="fa-solid fa-file-invoice-dollar"></i> completed payments</p>
       </div>
 
