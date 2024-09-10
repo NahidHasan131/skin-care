@@ -390,8 +390,16 @@ section{
    width: 100%;
 }
 
-
-
+/* Order Css */
+.orders .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   justify-content: center;
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
 
 
 
