@@ -475,7 +475,7 @@ section{
 /* messages css */
 .messages .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 35rem);
+   grid-template-columns: repeat(auto-fit, 30rem);
    justify-content: center;
    gap:1.5rem;
    max-width: 1200px;
@@ -489,17 +489,21 @@ section{
    border:var(--border);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
+   text-align: center;
 }
 
 .messages .box-container .box p{
    padding-bottom: 1.5rem;
    font-size: 2rem;
-   color:var(--light-color);
+   color:var(--black);
    line-height: 1.5;
+   text-transform: capitalize;
+   text-align: left;
 }
 
 .messages .box-container .box p span{
    color:var(--green-sea);
+   font-size: 1.8rem;
 }
 
 .messages .box-container .box .delete-btn{
