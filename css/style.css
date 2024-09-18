@@ -340,7 +340,7 @@ section{
 
 /* Home */
 .home{
-   min-height: 70vh;
+   height: 80vh;
    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home-bg.jpg) no-repeat;
    background-size: cover;
    background-position: center;
@@ -351,7 +351,7 @@ section{
 
 .home .content{
    text-align: center;
-   width: 60rem;
+   width: 65rem;
 }
 
 .home .content h3{
@@ -363,7 +363,7 @@ section{
 .home .content p{
    font-size:1.8rem;
    color:var(--light-white);
-   padding:1rem 0;
+   padding:1.8rem 0;
    line-height: 1.5;
 }
 
@@ -422,10 +422,11 @@ section{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
+   padding-bottom: 40px;
 }
 
 .about .flex .image{
-   flex:1 1 40rem;
+   flex:1 1 30rem;
 }
 
 .about .flex .image img{
@@ -433,8 +434,8 @@ section{
 }
 
 .about .flex .content{
-   flex:1 1 40rem;
-   padding:2rem;
+   flex:1 1 30rem;
+   padding: 3.5rem 3rem 3.5rem 5rem;
    background-color: var(--light-bg);
 }
 
@@ -445,7 +446,7 @@ section{
 }
 
 .about .flex .content p{
-   padding:1rem 0;
+   padding:2.2rem 0;
    line-height: 2;
    font-size: 1.7rem;
    color:var(--light-color);

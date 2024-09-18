@@ -53,7 +53,7 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="content">
       <h3>Hand Picked Book to your door.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod? Reiciendis ut porro iste totam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet distinctio esse tempore architecto ipsa suscipit sapiente magni, aliquid non numquam harum alias iste impedit.</p>
       <a href="about.php" class="white-btn">discover more</a>
    </div>
 
@@ -104,7 +104,7 @@ if(isset($_POST['add_to_cart'])){
 
       <div class="content">
          <h3>about us</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus animi voluptatibus placeat molestias, eum totam delectus earum quae sapiente excepturi in labore? Nobis tempora quibusdam distinctio odit repellendus unde adipisci, deserunt error excepturi consectetur laboriosam labore. Obcaecati, sapiente dolorem sunt culpa voluptatum accusantium veniam eveniet, quae incidunt ex, nisi magni.</p>
          <a href="about.php" class="btn">read more</a>
       </div>
 
