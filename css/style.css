@@ -426,6 +426,7 @@ section{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
+   padding: 0 2rem;
    padding-bottom: 40px;
 }
 
@@ -508,6 +509,7 @@ section{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
    gap:3rem;
+   padding: 0 2rem;
 }
 
 .footer .box-container .box:last-child{
