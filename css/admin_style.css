@@ -213,7 +213,7 @@ section{
 }
 
 .header .flex .account-box p{
-   font-size: 2rem;
+   font-size: 1.8rem;
    color:var(--light-color);
    margin-bottom: 1.5rem;
 }

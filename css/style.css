@@ -325,7 +325,7 @@ section{
 }
 
 .header .header-2 .flex .user-box p{
-   font-size: 2rem;
+   font-size: 1.8rem;
    color:var(--light-color);
    margin-bottom: 1.5rem;
 }
@@ -355,7 +355,7 @@ section{
 }
 
 .home .content h3{
-   font-size: 5.5rem;
+   font-size: 5.4rem;
    color:var(--white);
    text-transform: uppercase;
 }
@@ -385,10 +385,13 @@ section{
    text-align: center;
    border:var(--border);
    position: relative;
+   overflow: hidden;
 }
 
 .products .box-container .box .image{
+   margin-top: 40px;
    height: 30rem;
+   width: 24rem;
 }
 
 .products .box-container .box .name{
@@ -398,11 +401,12 @@ section{
 }
 
 .products .box-container .box .qty{
-   width: 100%;
+   width: 27%;
    padding:1.2rem 1.4rem;
    border-radius: .5rem;
    border:var(--border);
    margin:1rem 0;
+   margin-right: 10px;
    font-size: 2rem;
 }
 
@@ -410,8 +414,8 @@ section{
    position: absolute;
    top:1rem; left:1rem;
    border-radius: .5rem;
-   padding:1rem;
-   font-size: 2.5rem;
+   padding:.9rem;
+   font-size: 2.3rem;
    color:var(--white);
    background-color: var(--red);
 }
@@ -506,6 +510,9 @@ section{
    gap:3rem;
 }
 
+.footer .box-container .box:last-child{
+   margin-left: 70px;
+}
 .footer .box-container .box h3{
    text-transform: uppercase;
    color:var(--black);
