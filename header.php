@@ -27,14 +27,14 @@ if(isset($message)){
 
    <div class="header-2">
       <div class="flex">
-         <a href="home.php" class="logo">Skin-Care.</a>
+         <a href="home.php" class="logo">Skin<span><i class="fa-solid fa-user-doctor"></i></span>Care.</a>
 
          <nav class="navbar">
-            <a href="home.php">home</a>
-            <a href="about.php">about</a>
-            <a href="shop.php">shop</a>
-            <a href="contact.php">contact</a>
-            <a href="orders.php">orders</a>
+            <a href="home.php"><i class="fa-solid fa-house-user"></i> home</a>
+            <a href="shop.php"><i class="fa-solid fa-cart-shopping"></i> shop</a>
+            <a href="consult.php"><i class="fa-solid fa-notes-medical"></i> Consult</a>
+            <a href="contact.php"><i class="fa-solid fa-message"></i> contact</a>
+            <a href="orders.php"><i class="fa-solid fa-truck-fast"></i> orders</a>
          </nav>
 
          <div class="icons">

@@ -275,10 +275,13 @@ section{
 }
 
 .header .header-2 .flex .logo{
-   font-size: 2.5rem;
+   font-size: 2.6rem;
    color:var(--green-sea);
+   text-transform: uppercase;
 }
-
+.header .header-2 .flex .logo span{
+   color: var(--black);
+}
 .header .header-2 .flex .navbar a{
    margin:0 1rem;
    font-size: 2rem;
@@ -491,7 +494,7 @@ section{
 
 /* Cart page */
 
-.shopping-cart h1{
+.products .title, .shopping-cart h1{
    padding: 20px 0;
    color: var(--green-sea);
 }
@@ -605,6 +608,69 @@ section{
    opacity: .5;
    user-select: none;
 }
+.space{
+   margin-bottom: 50px;
+}
+
+/* Contact page */
+.contact{
+   margin: 40px auto;
+}
+.contact form{
+   margin:0 auto;
+   background-color: var(--light-bg);
+   border-radius: .5rem;
+   border:var(--border);
+   padding:4rem;
+   max-width: 50rem;
+   margin:0 auto;
+   text-align: center;
+}
+
+.contact form h3{
+   font-size: 3rem;
+   text-transform: uppercase;
+   margin-bottom: 2rem;
+   color:var(--green-sea);
+}
+
+.contact form .box{
+   margin:1rem 0;
+   width: 100%;
+   border:var(--border);
+   background-color: var(--white);
+   padding:1.5rem 2rem;
+   font-size: 1.8rem;
+   color:var(--black);
+   border-radius: 2.5rem;
+   text-transform: capitalize;
+}
+
+.contact form textarea{
+   border-radius: 1.5rem !important;
+   height: 20rem;
+   resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
