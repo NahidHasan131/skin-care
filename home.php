@@ -59,6 +59,10 @@ if(isset($_POST['add_to_cart'])){
 
 </section>
 
+<div class="banner-section">
+   <img src="./images/banner.png" alt="">
+</div>
+
 <section class="products">
 
    <h1 class="title">latest products</h1>
