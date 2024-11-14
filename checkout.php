@@ -72,10 +72,10 @@ if(isset($_POST['order_btn'])){
        $order_query = mysqli_query($conn, "SELECT * FROM `orders` WHERE name = '$name' AND number = '$number' AND email = '$email' AND method = '$method' AND address = '$address' AND total_products = '$total_products' AND total_price = '$order_total'") or die('query failed');
        
        if(mysqli_num_rows($order_query) > 0){
-          $message[] = 'order already placed!'; 
+          $message[] = 'Order already placed!'; 
        }else{
           mysqli_query($conn, "INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price, placed_on) VALUES('$user_id', '$name', '$number', '$email', '$method', '$address', '$total_products', '$order_total', '$placed_on')") or die('query failed');
-          $message[] = 'order placed successfully!';
+          $message[] = 'Oder placed successfully!';
           mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
           $grand_total = 0;
        }
@@ -146,48 +146,50 @@ if(isset($_POST['order_btn'])){
       <div class="flex">
          <div class="inputBox">
             <span>your name :</span>
-            <input type="text" name="name" required placeholder="enter your name">
+            <input type="text" name="name" required placeholder="Enter your name">
          </div>
          <div class="inputBox">
             <span>your number :</span>
-            <input type="number" name="number" required placeholder="enter your number">
+            <input type="number" name="number" required placeholder="Enter your number">
          </div>
          <div class="inputBox">
             <span>your email :</span>
-            <input type="email" name="email" required placeholder="enter your email">
+            <input type="email" name="email" required placeholder="Enter your email">
          </div>
          <div class="inputBox">
-            <span>payment method :</span>
+            <span>Payment method :</span>
             <select name="method">
                <option value="cash on delivery">cash on delivery</option>
                <option value="credit card">credit card</option>
                <option value="paypal">paypal</option>
-               <option value="paytm">paytm</option>
+               <option value="paytm">Bkash</option>
+               <option value="paytm">Nagad</option>
+               <option value="paytm">Rocket</option>
             </select>
          </div>
          <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="number" min="0" name="flat" required placeholder="e.g. flat no.">
+            <span>Address line 01 :</span>
+            <input type="number" min="0" name="flat" required placeholder="E.g. flat no.">
          </div>
          <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="text" name="street" required placeholder="e.g. street name">
+            <span>Address line 01 :</span>
+            <input type="text" name="street" required placeholder="E.g. street name">
          </div>
          <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" required placeholder="e.g. mumbai">
+            <span>City :</span>
+            <input type="text" name="city" required placeholder="E.g. Natore">
          </div>
          <div class="inputBox">
             <span>state :</span>
-            <input type="text" name="state" required placeholder="e.g. maharashtra">
+            <input type="text" name="state" required placeholder="E.g. Rajshahi">
          </div>
          <div class="inputBox">
-            <span>country :</span>
-            <input type="text" name="country" required placeholder="e.g. india">
+            <span>Country :</span>
+            <input type="text" name="country" required placeholder="E.g. Bangladesh">
          </div>
          <div class="inputBox">
-            <span>pin code :</span>
-            <input type="number" min="0" name="pin_code" required placeholder="e.g. 123456">
+            <span>Pin code :</span>
+            <input type="number" min="0" name="pin_code" required placeholder="E.g. 123456">
          </div>
       </div>
       <input type="hidden" name="grand_total" value="<?php echo $grand_total; ?>">

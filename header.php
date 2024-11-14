@@ -31,7 +31,16 @@ if(isset($message)){
 
          <nav class="navbar">
             <a href="home.php"><i class="fa-solid fa-house-user"></i> home</a>
-            <a href="shop.php"><i class="fa-solid fa-cart-shopping"></i> shop</a>
+            <!-- Dropdown menu for "Shop" -->
+            <div class="dropdown">
+               <a href="shop.php"><i class="fa-solid fa-cart-shopping"></i> shop <i class="fa-solid fa-caret-down"></i></a>
+               <div class="dropdown-content">
+                     <a href="#">Oily Skin</a>
+                     <a href="#">Dry Skin</a>
+                     <a href="#">Winter Product</a>
+               </div>
+            </div>
+
             <a href="consult.php"><i class="fa-solid fa-notes-medical"></i> Consult</a>
             <a href="contact.php"><i class="fa-solid fa-message"></i> contact</a>
             <a href="orders.php"><i class="fa-solid fa-truck-fast"></i> orders</a>

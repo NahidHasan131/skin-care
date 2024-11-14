@@ -18,13 +18,14 @@ if(isset($_POST['add_product'])){
    $image_size = $_FILES['image']['size'];
    $image_tmp_name = $_FILES['image']['tmp_name'];
    $image_folder = 'uploaded_img/'.$image;
+   $category= $_POST['category'];
 
    $select_product_name = mysqli_query($conn, "SELECT name FROM `products` WHERE name = '$name'") or die('query failed');
 
    if(mysqli_num_rows($select_product_name) > 0){
       $message[] = 'product already added';
    }else{
-      $add_product_query = mysqli_query($conn, "INSERT INTO `products`(name, price, image) VALUES('$name', '$price', '$image')") or die('query failed');
+      $add_product_query = mysqli_query($conn, "INSERT INTO `products`(name, price, image, category	) VALUES('$name', '$price', '$image', '$category')") or die('query failed');
 
       if($add_product_query){
          if($image_size > 2000000){
@@ -107,6 +108,7 @@ if(isset($_POST['update_product'])){
       <h3>add product</h3>
       <input type="text" name="name" class="box" placeholder="Enter product name" required>
       <input type="number" min="0" name="price" class="box" placeholder="Enter product price" required>
+      <input type="text" min="0" name="category" class="box" placeholder="Enter product category" required>
       <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
       <input type="submit" value="add product" name="add_product" class="btn">
    </form>
@@ -129,6 +131,7 @@ if(isset($_POST['update_product'])){
       <div class="box">
          <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
          <div class="name"><?php echo $fetch_products['name']; ?></div>
+         <div class="category">Category: <span><?php echo $fetch_products['category']; ?></span></div>
          <div class="price">TK.<?php echo $fetch_products['price']; ?>/-</div>
          <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">update</a>
          <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>

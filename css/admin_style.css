@@ -344,7 +344,15 @@ section{
    color:var(--black);
    text-transform: capitalize;
 }
-
+.show-products .box-container .box .category{
+   padding:1rem 0;
+   font-size: 2rem;
+   color:var(--black);
+   text-transform: capitalize;
+}
+.show-products .box-container .box .category span{
+   color: #1abc9c;
+}
 .show-products .box-container .box .price{
    padding:1rem 0;
    font-size: 2.5rem;
