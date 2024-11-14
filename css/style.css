@@ -90,7 +90,7 @@ section{
 .white-btn{
    display: inline-block;
    margin-top: 1rem;
-   padding:1.4rem 3.5rem;
+   padding:1.4rem 3.2rem;
    cursor: pointer;
    color:var(--white);
    font-size: 1.8rem;
@@ -407,7 +407,7 @@ section{
    max-width: 1200px;
    margin:0 auto;
    display: grid;
-   grid-template-columns: repeat(auto-fit, 30rem);
+   grid-template-columns: repeat(auto-fit, 28rem);
    align-items: flex-start;
    gap:1.5rem;
    justify-content: center;
@@ -427,17 +427,26 @@ section{
 .products .box-container .box .image{
    margin-top: 40px;
    height: 30rem;
-   width: 24rem;
+   width: 23rem;
 }
 
 .products .box-container .box .name{
    padding:1rem 0;
    font-size: 2rem;
    color:var(--black);
+   margin-top: 10px;
+}
+
+.products .box-container .box .category{
+   font-size: 1.5rem;
+}
+
+.products .box-container .box .category span{
+   color: var(--green-sea);
 }
 
 .products .box-container .box .qty{
-   width: 27%;
+   width: 26%;
    padding:1.2rem 1.4rem;
    border-radius: .5rem;
    border:var(--border);
@@ -536,7 +545,7 @@ section{
    max-width: 1200px;
    margin:0 auto;
    display: grid;
-   grid-template-columns: repeat(auto-fit, 30rem);
+   grid-template-columns: repeat(auto-fit, 28rem);
    align-items: center;
    gap:1.5rem;
    justify-content: center;
@@ -544,7 +553,7 @@ section{
 
 .shopping-cart .box-container .box{
    text-align: center;
-   padding:3rem 2rem;
+   padding:3rem 1.5rem;
    border-radius: .5rem;
    background-color: var(--white);
    box-shadow: var(--box-shadow);
@@ -555,7 +564,7 @@ section{
 .shopping-cart .box-container .box img{
    margin-top: 20px;
    height: 30rem;
-   width: 24rem;
+   width: 23rem;
 }
 
 .shopping-cart .box-container .box .fa-times{
@@ -572,10 +581,6 @@ section{
 
 .shopping-cart .box-container .box .fa-times:hover{
    background-color: var(--black);
-}
-
-.shopping-cart .box-container .box img{
-   height: 30rem;
 }
 
 .shopping-cart .box-container .box .name{

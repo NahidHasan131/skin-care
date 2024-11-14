@@ -35,9 +35,9 @@ if(isset($message)){
             <div class="dropdown">
                <a href="shop.php"><i class="fa-solid fa-cart-shopping"></i> shop <i class="fa-solid fa-caret-down"></i></a>
                <div class="dropdown-content">
-                     <a href="#">Oily Skin</a>
-                     <a href="#">Dry Skin</a>
-                     <a href="#">Winter Product</a>
+                     <a href="./oily_skin.php">Oily Skin</a>
+                     <a href="./dry_skin.php">Dry Skin</a>
+                     <a href="./winter_product.php">Winter Product</a>
                </div>
             </div>
 
