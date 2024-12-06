@@ -39,14 +39,14 @@ if(!isset($user_id)){
    <div class="box-container">   
       <div class="box">
          <img src="./images/dr-female.jpg" alt="">
-         <div class="name">Dr.Homai Ara Yesmin</div>
+         <div class="name">Dr.HS Yesmin</div>
          <div class="designantion">MBBS, BCS (Health), FCPS (Skin & VD)</div>
          <a href="tel:+88017000000" class="option-btn">Call</a>
          <a href="mailto:someone@example.com" class="delete-btn">Mail Us</a>
       </div>
       <div class="box">
          <img src="./images/dr-female.jpg" alt="">
-         <div class="name">Dr.Jeba</div>
+         <div class="name">Dr.JN Jeba</div>
          <div class="designantion">Dermatologist</div>
          <a href="tel:+88017000000" class="option-btn">Call</a>
          <a href="mailto:someone@example.com" class="delete-btn">Mail Us</a>
